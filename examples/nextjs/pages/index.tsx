@@ -1,6 +1,8 @@
 import type { NextPage } from 'next';
 import { ConnectKitButton } from 'connectkit';
 
+// initial commit
+
 const Home: NextPage = () => {
   return (
     <div
