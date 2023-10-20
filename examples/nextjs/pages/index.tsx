@@ -14,6 +14,9 @@ const Home: NextPage = () => {
       }}
     >
       <ConnectKitButton />
+      <div>
+        <h1 className="flex border-2 border-fuchsia-600">ConnectKit</h1>
+      </div>
     </div>
   );
 };
