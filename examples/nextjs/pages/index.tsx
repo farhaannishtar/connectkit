@@ -1,7 +1,14 @@
 import type { NextPage } from 'next';
 import { ConnectKitButton } from 'connectkit';
-
-// initial commit
+import { Button } from '../components/ui/Button';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '../components/ui/Card';
 
 const Home: NextPage = () => {
   return (
@@ -13,10 +20,20 @@ const Home: NextPage = () => {
         height: '100vh',
       }}
     >
-      <ConnectKitButton />
-      <div>
-        <h1 className="flex border-2 border-fuchsia-600">ConnectKit</h1>
-      </div>
+      <Card>
+        <CardHeader>
+          <CardTitle>Card Title</CardTitle>
+          <CardDescription>Card Description</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p>Card Content</p>
+        </CardContent>
+        <CardFooter>
+          <p>Card Footer</p>
+        </CardFooter>
+      </Card>
+
+      {/* <ConnectKitButton /> */}
     </div>
   );
 };
